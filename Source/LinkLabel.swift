@@ -199,7 +199,7 @@ open class LinkLabel: UILabel, UIGestureRecognizerDelegate {
         return nil
     }
     
-    @objc func respondToLinkLabelTouched(_ gestureRecognizer: TouchGestureRecognizer) {
+    @objc open func respondToLinkLabelTouched(_ gestureRecognizer: TouchGestureRecognizer) {
         if self.linkAttributes.count == 0 {
             return
         }
@@ -225,7 +225,7 @@ open class LinkLabel: UILabel, UIGestureRecognizerDelegate {
         
     }
     
-    @objc func respondToLinkLabelTapped(_ gestureRecognizer: UITapGestureRecognizer) {
+    @objc open func respondToLinkLabelTapped(_ gestureRecognizer: UITapGestureRecognizer) {
         if self.linkAttributes.count == 0 {
             return
         }
